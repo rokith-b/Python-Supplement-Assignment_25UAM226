@@ -3,5 +3,8 @@
 
 numbers = [45, 89, 12, 78, 34]
 numbers.sort()
-second_largest = numbers[-2]
-print(f"Second largest: {second_largest}")
+if len(numbers) >= 2:
+    second_largest = numbers[-2]
+    print(f"Second largest: {second_largest}")
+else:
+    print("Cannot find second largest number.")

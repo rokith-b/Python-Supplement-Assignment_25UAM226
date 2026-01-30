@@ -3,5 +3,8 @@
 
 numbers = [10, 20, 30, 40, 50]
 total = sum(numbers)
-average = total / len(numbers)
+if len(numbers) > 0:
+    average = total / len(numbers)
+else:
+    average = 0
 print(f"Average: {average}")
